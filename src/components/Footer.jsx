@@ -46,7 +46,7 @@ const AppFooter = () => {
                                 onError={(e) => { e.target.style.display = 'none'; console.error('Logo image failed to load'); }}
                             />
                             {/* Changed text color to black #000000 */}
-                            <span className="text-[#000000]">TeamDev</span><span className="text-white">360</span>
+                            <h1 className='text-white'><span className='text-[#000000]'>TeamDev</span>360</h1>
                         </a>
                         <p className="text-sm text-gray-200 mt-4">
                             Your trusted partner for corporate outsourcing and remote staff leasing. Scaling your team, minimizing your risk.
@@ -68,9 +68,9 @@ const AppFooter = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
                         <ul className="space-y-2 text-sm">
-                            <li className="text-gray-200">Email: info@teamdev360.com</li>
-                            <li className="text-gray-200">Phone: +1 (555) 360-DEV</li>
-                            <li className="text-gray-200">HQ: Global Tech Hub, CA 90001</li>
+                            <li className="text-gray-200">Email: mqonzales@teamdev360.com</li>
+                            <li className="text-gray-200">Phone: +63 922 330 4391</li>
+                            <li className="text-gray-200">Unit 3FB Romercial Bldg, Angeles City, Philippines 2009</li>
                         </ul>
                     </div>
 

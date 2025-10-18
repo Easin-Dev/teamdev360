@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono, Lato } from "next/font/google"; // Lato ফন্টটি import করা হলো
 import "./globals.css";
+import Header from "@/components/Navbar";
+import AppFooter from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +32,9 @@ export default function RootLayout({ children }) {
         // lato.variable এখানে যুক্ত করা হলো 
         className={`${geistSans.variable} ${geistMono.variable} ${lato.variable} antialiased`}
       >
+        <Header />
         {children}
+        <AppFooter />
       </body>
     </html>
   );

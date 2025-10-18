@@ -10,8 +10,9 @@ import React, { useState } from 'react';
 // Dark Green (Hover): #6F833E
 // Light Gray: #F5F5F5
 
-const NavLink = ({ children }) => (
-    <a href="#" className="text-gray-600 hover:text-[#8AA34C] transition duration-200 block py-2 md:py-0 md:inline">
+// NavLink component is updated to accept an 'href' prop for navigation
+const NavLink = ({ href, children }) => (
+    <a href={href} className="text-gray-600 hover:text-[#8AA34C] transition duration-200 block py-2 md:py-0 md:inline">
         {children}
     </a>
 );
@@ -30,29 +31,28 @@ const Header = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
 
                 {/* Logo */}
-                <a href="#" className="text-2xl font-bold flex items-center space-x-2">
+                <a href="/" className="text-2xl font-bold flex items-center">
                     {/* Use the provided image link for the logo icon */}
                     <img
                         src="https://i.postimg.cc/xTSGNwkR/Team-Dev360-icon-transparent-bg.avif"
                         alt="TeamDev360 Logo"
                         className="h-8 w-auto"
                         // Fallback in case image fails to load (optional but good practice)
-                        onError={(e) => { e.target.style.display = 'none'; console.error('Logo image failed to load'); }}
-                    />
-                    <span className="text-[#8AA34C]">TeamDev</span><span className="text-gray-900">360</span>
+                        onError={(e) => { e.target.style.display = 'none'; }}
+                    /><h1 className='text-gray-900'><span className='text-[#8AA34C]'>TeamDev</span>360</h1>
                 </a>
 
-                {/* Desktop Navigation - Updated Links */}
+                {/* Desktop Navigation - Updated with href links */}
                 <nav className="hidden md:flex space-x-8">
-                    <NavLink>Home</NavLink>
-                    <NavLink>Outsourcing & Staff Leasing</NavLink>
-                    <NavLink>Who we are</NavLink>
-                    <NavLink>Solutions</NavLink>
-                    <NavLink>Contact Us</NavLink>
+                    <NavLink href="/">Home</NavLink>
+                    <NavLink href="#outsourcing">Outsourcing & Staff Leasing</NavLink>
+                    <NavLink href="#about">Who we are</NavLink>
+                    <NavLink href="#solutions">Solutions</NavLink>
+                    <NavLink href="/contact-us">Contact Us</NavLink>
                 </nav>
 
                 {/* CTA Button - Desktop */}
-                <a href="#" className="hidden md:inline-flex px-4 py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
+                <a href="#get-a-quote" className="hidden md:inline-flex px-4 py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
                     Get a Quote
                 </a>
 
@@ -76,18 +76,18 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu (Conditionally rendered) - Updated Links */}
+            {/* Mobile Menu (Conditionally rendered) - Updated with href links */}
             <div
                 className={`md:hidden bg-white px-4 pb-4 transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100 border-t border-gray-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
             >
                 <div className="flex flex-col space-y-1">
-                    <NavLink>Home</NavLink>
-                    <NavLink>Outsourcing & Staff Leasing</NavLink>
-                    <NavLink>Who we are</NavLink>
-                    <NavLink>Solutions</NavLink>
-                    <NavLink>Contact Us</NavLink>
+                    <NavLink href="#home">Home</NavLink>
+                    <NavLink href="#outsourcing">Outsourcing & Staff Leasing</NavLink>
+                    <NavLink href="#about">Who we are</NavLink>
+                    <NavLink href="#solutions">Solutions</NavLink>
+                    <NavLink href="#contact">Contact Us</NavLink>
                 </div>
-                <a href="#" className="block mt-4 text-center py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
+                <a href="#get-a-quote" className="block mt-4 text-center py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
                     Get a Quote
                 </a>
             </div>
@@ -95,5 +95,5 @@ const Header = () => {
     );
 };
 
-// Export the main component for use
 export default Header;
+
