@@ -34,7 +34,7 @@ const AppFooter = () => {
                     <div>
                         <h4 className="sr-only">TeamDev360</h4>
                         {/* Logo Block - Updated for Black Text and Black Icon */}
-                        <a href="#" className="text-2xl font-bold flex items-center space-x-2">
+                        <a href="#" className="text-2xl font-bold flex items-center">
                             <img
                                 src="https://i.postimg.cc/xTSGNwkR/Team-Dev360-icon-transparent-bg.avif"
                                 alt="TeamDev360 Logo"

@@ -45,7 +45,7 @@ const Header = () => {
                 {/* Desktop Navigation - Updated with href links */}
                 <nav className="hidden md:flex space-x-8">
                     <NavLink href="/">Home</NavLink>
-                    <NavLink href="#outsourcing">Outsourcing & Staff Leasing</NavLink>
+                    <NavLink href="/Outsourcing-&-Staff-Leasing">Outsourcing & Staff Leasing</NavLink>
                     <NavLink href="#about">Who we are</NavLink>
                     <NavLink href="#solutions">Solutions</NavLink>
                     <NavLink href="/contact-us">Contact Us</NavLink>
