@@ -46,13 +46,13 @@ const Header = () => {
                 <nav className="hidden md:flex space-x-8">
                     <NavLink href="/">Home</NavLink>
                     <NavLink href="/Outsourcing-&-Staff-Leasing">Outsourcing & Staff Leasing</NavLink>
-                    <NavLink href="#about">Who we are</NavLink>
-                    <NavLink href="#solutions">Solutions</NavLink>
+                    <NavLink href="/who-we-are">Who we are</NavLink>
+                    <NavLink href="/solutions">Solutions</NavLink>
                     <NavLink href="/contact-us">Contact Us</NavLink>
                 </nav>
 
                 {/* CTA Button - Desktop */}
-                <a href="#get-a-quote" className="hidden md:inline-flex px-4 py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
+                <a href="/contact-us" className="hidden md:inline-flex px-4 py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
                     Get a Quote
                 </a>
 
@@ -81,13 +81,13 @@ const Header = () => {
                 className={`md:hidden bg-white px-4 pb-4 transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100 border-t border-gray-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
             >
                 <div className="flex flex-col space-y-1">
-                    <NavLink href="#home">Home</NavLink>
-                    <NavLink href="#outsourcing">Outsourcing & Staff Leasing</NavLink>
-                    <NavLink href="#about">Who we are</NavLink>
-                    <NavLink href="#solutions">Solutions</NavLink>
-                    <NavLink href="#contact">Contact Us</NavLink>
+                    <NavLink href="/">Home</NavLink>
+                    <NavLink href="/Outsourcing-&-Staff-Leasing">Outsourcing & Staff Leasing</NavLink>
+                    <NavLink href="/who-we-are">Who we are</NavLink>
+                    <NavLink href="/solutions">Solutions</NavLink>
+                    <NavLink href="/contact-us">Contact Us</NavLink>
                 </div>
-                <a href="#get-a-quote" className="block mt-4 text-center py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
+                <a href="/contact-us" className="block mt-4 text-center py-2 bg-[#8AA34C] text-white font-medium rounded-lg hover:bg-[#6F833E] transition duration-300 shadow-md">
                     Get a Quote
                 </a>
             </div>
