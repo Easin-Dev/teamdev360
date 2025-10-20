@@ -9,18 +9,21 @@ const HeroSlider = () => {
             title: "Need to outsource your software development team?",
             description: "We provide the developers you require for any programming language. Hire a single developer or a whole team with our flexible staff leasing and specialized services.",
             buttonText: "Get a Quote",
+            hrefLink: "/contact-us",
             backgroundImage: "https://i.postimg.cc/LsB71tDx/Whisk-4ae7889325e62fc99fe4e4652885f855dr.jpg", // Outsourcing image
         },
         {
             title: "Proven and Experienced Managers to Lead Your Projects.",
             description: "We'll work with your team to optimize efficiency, productivity, and value delivery, employing various Agile methods and practices that work best for your chosen team.",
             buttonText: "Meet Our Leaders",
+            hrefLink: "/who-we-are",
             backgroundImage: "https://i.postimg.cc/yd8f3wkg/Whisk-7661cb39b884a48bdbe41c17ae81daf2dr.jpg", // Managers image
         },
         {
             title: "Competent Software Developers for Any Tech Stack.",
             description: "With skillsets in Java, .Net, C#, PHP, and more. If we don't have the staff right away, we'll scour our network to deliver the right developer that you need.",
             buttonText: "View Developer Profiles",
+            hrefLink: "/solutions",
             backgroundImage: "https://i.postimg.cc/8zdwK162/Whisk-aca690e675db8dd81f643732680936c6dr.jpg", // Developers image
         },
     ];
@@ -58,7 +61,7 @@ const HeroSlider = () => {
                             {slide.description}
                         </p>
                         <a
-                            href="#"
+                            href={slide.hrefLink}
                             className="px-6 py-3 bg-[#8AA34C] text-white font-semibold rounded-lg shadow-lg
                                          hover:bg-[#6F833E] transition duration-300 transform hover:scale-105 font-lato"
                         >
