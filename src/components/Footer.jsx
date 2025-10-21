@@ -68,7 +68,7 @@ const AppFooter = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
                         <ul className="space-y-2 text-sm">
-                            <li className="text-gray-200">Email: mgozales@teamdev360.com</li>
+                            <li className="text-gray-200">Email: info@teamdev360.com</li>
                             <li className="text-gray-200">Phone: +63 922 330 4391</li>
                             <li className="text-gray-200">Unit 3FB Romercial Bldg, Angeles City, Philippines 2009</li>
                         </ul>
