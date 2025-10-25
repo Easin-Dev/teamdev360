@@ -76,14 +76,14 @@ export default function App() {
                 </section>
 
                 {/* Management Team Section */}
-                <section className="py-16" style={customStyles.managementBg}>
+                <section className="py-16 bg-[#95A844]" style={customStyles.managementBg}>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-4xl font-bold text-center mb-12 text-white">Management Team</h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3">
 
                             {/* Team Member Card 1 - Mark Benedict Gonzales */}
-                            <div className="bg-white p-6 rounded-xl text-center shadow-xl">
+                            <div className="bg-white/30 backdrop-blur-none p-6 text-center">
                                 <img
                                     src="https://static.wixstatic.com/media/d78fab_a3c0937390224e7bba28a814e8a8b08a~mv2.jpg/v1/fill/w_192,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mark.jpg"
                                     alt="Mark Benedict Gonzales's professional photo"
@@ -105,7 +105,7 @@ export default function App() {
                             </div>
 
                             {/* Team Member Card 2 - Mark Lemuel Bodino */}
-                            <div className="bg-white p-6 rounded-xl text-center shadow-xl">
+                            <div className="bg-white p-6  text-center">
                                 <img
                                     src="https://static.wixstatic.com/media/d78fab_bad100ebb69c4e7f8c83004dca4ed7bd~mv2.jpg/v1/crop/x_0,y_18,w_709,h_956/fill/w_184,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Budz%20cropped_edited.jpg"
                                     alt="Mark Lemuel Bodino's professional photo"
@@ -127,7 +127,7 @@ export default function App() {
                             </div>
 
                             {/* Team Member Card 3 - Jayson Mandal */}
-                            <div className="bg-white p-6 rounded-xl text-center shadow-xl">
+                            <div className="bg-white/30 backdrop-blur-none p-6  text-center">
                                 <img
                                     src="https://static.wixstatic.com/media/d78fab_26df085c559944ad84d2d785eb60c391~mv2.jpg/v1/crop/x_13,y_0,w_388,h_531/fill/w_184,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Shemong%20Passport%20Size.jpg"
                                     alt="Jayson Mandal's professional photo"
@@ -157,87 +157,87 @@ export default function App() {
                     <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Meet the Staff</h2>
 
                     {/* Grid layout matching the image's structure */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
                         {/* Staff Card - John */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">John</h4>
                             <p className="text-sm text-green-700">Software Engineer</p>
                             <p className="text-xs text-gray-600">(JavaScript, C#, PHP, .Net)</p>
                         </div>
 
                         {/* Staff Card - Vina */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Vina</h4>
                             <p className="text-sm text-green-700">Project Manager, Scrum Master, Power BI Developer, SQA Engineer</p>
                             <p className="text-xs text-gray-600"></p> {/* No specific skills listed in image */}
                         </div>
 
                         {/* Staff Card - Chris May */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Chris May</h4>
                             <p className="text-sm text-green-700">Software Engineer</p>
                             <p className="text-xs text-gray-600">(.Net, C#, Entity Framework, SQL Server, etc.)</p>
                         </div>
 
                         {/* Staff Card - Jhoan */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Jhoan</h4>
                             <p className="text-sm text-green-700">SQA Automation Engineer, PBI Developer</p>
                             <p className="text-xs text-gray-600">(Selenium, Cypress, C#, Power BI)</p>
                         </div>
 
                         {/* Staff Card - Harold */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Harold</h4>
                             <p className="text-sm text-green-700">SQA Automation, Software Developer</p>
                             <p className="text-xs text-gray-600">(Robot Framework, Selenium, Cypress, C#, Python, Java, PHP, C++)</p>
                         </div>
 
                         {/* Staff Card - Grace */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Grace</h4>
                             <p className="text-sm text-green-700">SQA Automation, Software Developer</p>
                             <p className="text-xs text-gray-600">(Cypress, Python, JavaScript)</p>
                         </div>
 
                         {/* Staff Card - Lois */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Lois</h4>
                             <p className="text-sm text-green-700">SQA Automation, Software Developer</p>
                             <p className="text-xs text-gray-600">(Cypress, Selenium WebDriver, TestIM, JavaScript)</p>
                         </div>
 
                         {/* Staff Card - Gregory */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Gregory</h4>
                             <p className="text-sm text-green-700">SQL Developer</p>
                             <p className="text-xs text-gray-600">(SQL, .NET, PHP, JavaScript, etc.)</p>
                         </div>
 
                         {/* Staff Card - Michael */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Michael</h4>
                             <p className="text-sm text-green-700">Production Engineer</p>
                             <p className="text-xs text-gray-600">(C#, .NET, PHP, AngularJS, Angular2, SQL, jQuery, Java, React, etc.)</p>
                         </div>
 
                         {/* Staff Card - Kate */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Kate</h4>
                             <p className="text-sm text-green-700">Business Service Bookkeeper</p>
                             <p className="text-xs text-gray-600">(Xero, QuickBooks, Dext Prepare, HubDoc)</p>
                         </div>
 
                         {/* Staff Card - Rose Anne */}
-                        <div className="bg-green-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#BCC097] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Rose Anne</h4>
                             <p className="text-sm text-green-700">Business Service Bookkeeper</p>
                             <p className="text-xs text-gray-600">(Xero, QuickBooks, Dext Prepare, HubDoc)</p>
                         </div>
 
                         {/* Staff Card - Maria */}
-                        <div className="bg-green-200 p-4 rounded-lg shadow-md flex flex-col justify-center items-center h-40 text-center">
+                        <div className="bg-[#95A844] p-4 flex flex-col justify-center items-center h-40 text-center">
                             <h4 className="font-semibold text-gray-900 text-lg">Maria</h4>
                             <p className="text-sm text-green-700">Business Service Bookkeeper</p>
                             <p className="text-xs text-gray-600">(Xero, QuickBooks, Dext Prepare, HubDoc)</p>

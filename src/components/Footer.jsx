@@ -10,7 +10,7 @@ const AppFooter = () => {
 
     return (
         // Setting font globally. Note: Background color updated to bg-[#8AA34C] from previous iteration.
-        <footer className="bg-[#8AA34C] text-white py-12 font-lato">
+        <footer className="bg-[#95A844] text-white py-12 font-lato">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Email Signup Bar */}
                 <div className="flex flex-col md:flex-row justify-between items-center border-b border-white border-opacity-30 pb-8 mb-8">
